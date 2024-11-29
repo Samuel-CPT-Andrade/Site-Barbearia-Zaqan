@@ -89,13 +89,58 @@ html {
   width: 100%;
   font-family: 'zaqan1';
   margin-top: 125px;
-  transition: background-image 1s ease-in-out; /* Transi��o suave */
+  transition: background-image 1s ease-in-out; /* Transi��o suave */
 }
 
 .Destaque a{
   text-decoration: none; /* Remove o sublinhado */
   color: inherit; /* Herda a cor do elemento pai (ou pode definir uma cor personalizada) */
 }
+
+@media screen and (max-width: 1400px) {
+  /*NAVBAR */
+  .navbar .navbar-collapse .nav-item {
+      display: none !important; /* Força a aplicação da regra */
+  }
+
+  /* LOGO ZAQAN */
+  .navbar-brand img {
+      width: 100px; /* Novo tamanho da imagem */
+      height: auto; /* Mantém as proporções */
+  }
+
+  .Destaque .Funcionamentos .fs-1 {
+    font-size: 1.0rem !important; /* Menor que o padrão da classe fs-1 */
+}
+
+.Destaque .Funcionamentos .fs-5 {
+    font-size: 0.7rem !important; /* Menor que o padrão da classe fs-5 */
+}
+
+/* Reduzir tamanho do botão */
+.Destaque .btn {
+  font-size: 0.7rem; 
+  padding: 8px; /* Ajusta o espaçamento interno para manter o tamanho do botão consistente */
+}
+
+/* Ajustar o ícone dentro do botão */
+.Destaque .btn .icon {
+  width: 24px; /* Define o tamanho do ícone */
+  height: auto; 
+}
+
+.servicos .card {
+  left:12%; /* Garante que os cards ocupem 30% da largura em telas menores, mas flexível */
+  margin: 10px; /* Adiciona um pequeno espaço entre os cards */
+}
+
+.servicos .card {
+  left:8%; /* Garante que os cards ocupem 30% da largura em telas menores, mas flexível */
+  margin: 10px; /* Adiciona um pequeno espaço entre os cards */
+}
+
+}
+
 
 /* Para garantir que a linha vertical seja posicionada corretamente */
 .linha-vertical {
